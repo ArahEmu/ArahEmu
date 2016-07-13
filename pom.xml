@@ -1,40 +1,40 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.arahemu</groupId>
-  <artifactId>arahemu</artifactId>
-  <version>1.0-SNAPSHOT</version>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.arahemu</groupId>
+    <artifactId>arahemu</artifactId>
+    <version>1.0-SNAPSHOT</version>
 
-  <packaging>pom</packaging>
+    <packaging>pom</packaging>
 
-  <modules>
-    <module>..\framework</module>
-    <module>..\auth-server</module>
-    <module>..\game-server</module>
-  </modules>
+    <modules>
+        <module>..\framework</module>
+        <module>..\auth-server</module>
+        <module>..\game-server</module>
+    </modules>
 
-  <properties>
-    <java.source>1.8</java.source>
-    <java.target>1.8</java.target>
-    <java.debug>true</java.debug>
-    <java.optimize>true</java.optimize>
-    <java.verbose>true</java.verbose>
-  </properties>
+    <properties>
+        <java.source>1.8</java.source>
+        <java.target>1.8</java.target>
+        <java.debug>true</java.debug>
+        <java.optimize>true</java.optimize>
+        <java.verbose>true</java.verbose>
+    </properties>
 
-  <build>
-    <plugins>
-      <!-- http://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.5.1</version>
-        <configuration>
-          <source>${java.source}</source>
-          <target>${java.target}</target>
-          <debug>${java.debug}</debug>
-          <optimize>${java.optimize}</optimize>
-          <verbose>${java.verbose}</verbose>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
+    <build>
+        <plugins>
+            <!-- http://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.5.1</version>
+                <configuration>
+                    <source>${java.source}</source>
+                    <target>${java.target}</target>
+                    <debug>${java.debug}</debug>
+                    <optimize>${java.optimize}</optimize>
+                    <verbose>${java.verbose}</verbose>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
